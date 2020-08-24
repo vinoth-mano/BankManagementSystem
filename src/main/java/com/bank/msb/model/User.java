@@ -1,9 +1,16 @@
 package com.bank.msb.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.ToString;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
+@Builder(toBuilder = true)
+@AllArgsConstructor
 @Document
+@ToString
 public class User {
     @Id
     private String userID;
@@ -18,21 +25,6 @@ public class User {
     private String contactNo;
     private String dob;
     private String accountType;
-
-    public User(String userID,String name, String userName, String password, String address, String state, String country, String emailAddress, String pan, String contactNo, String dob, String accountType) {
-        this.userID = userID;
-        this.name = name;
-        this.userName = userName;
-        this.password = password;
-        this.address = address;
-        this.state = state;
-        this.country = country;
-        this.emailAddress = emailAddress;
-        this.pan = pan;
-        this.contactNo = contactNo;
-        this.dob = dob;
-        this.accountType = accountType;
-    }
 
     public String getUserID() {
         return userID;
