@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.bank</groupId>
 	<artifactId>bank-management-system</artifactId>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bank-management-system</name>
 	<description>Bank Mangement System</description>
