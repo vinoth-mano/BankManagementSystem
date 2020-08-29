@@ -35,10 +35,8 @@ public class UserController {
     @PostMapping("/user/loan")
     public Mono<ResponseEntity<Loan>> createLoan(@RequestBody Loan loan) {
         return userService.createLoan(loan, loanRepository);
-        //return loanRepository.save(loanDetails).map(createdLoan ->  new ResponseEntity<>(createdLoan, HttpStatus.CREATED));
     }
 
-    //@PutMapping("update/account")
     @PutMapping("/user/update/{userID}")
     public Mono<ResponseEntity<String>> updateById(@PathVariable("userID") String userID, @RequestBody User user) {
 

@@ -22,7 +22,6 @@ public class UserServiceTest {
     private UserRepository userRepository;
     @Autowired
     private LoanRepository loanRepository;
-
 @Test
     public void createUserTest(){
     User cust = new  User("12","vinothini","vinothini","123","madurai","tn","india","vin@gmail.com","as122","7899977","25/07/1998","saving");
