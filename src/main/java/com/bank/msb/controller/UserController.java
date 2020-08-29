@@ -29,9 +29,7 @@ public class UserController {
     @PostMapping("/user/login")
     public Mono<ResponseEntity<String>> userLogin(@RequestBody User user) {
         return userService.userValidation(user, userRepository);
-       /* return userRepository.findByUserIDAndPassword(user.getUserID(),user.getPassword())
-                .map(loggedInUser-> new ResponseEntity<>("Login Successfully", HttpStatus.FOUND))
-                .defaultIfEmpty(new ResponseEntity<>("Login failed", HttpStatus.NOT_FOUND));*/
+
     }
 
     @PostMapping("/user/loan")

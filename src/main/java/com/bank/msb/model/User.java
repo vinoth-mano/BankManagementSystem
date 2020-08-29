@@ -26,6 +26,9 @@ public class User {
     private String dob;
     private String accountType;
 
+    public User() {
+    }
+
     public String getUserID() {
         return userID;
     }

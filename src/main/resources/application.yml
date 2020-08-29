@@ -5,5 +5,4 @@ spring:
       port: 27017
       database: bank
 server:
-  port: 8085
-
+  port: 8586
